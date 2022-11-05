@@ -1,13 +1,9 @@
-import React, { Component } from "react";
-// import axios from "axios";
+// import { React } from "react";
+import { Grid } from "@material-ui/core";
 import Container from "@material-ui/core/Container";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import Grid from "@material-ui/core/Grid";
-// import { ToastContainer, toast } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
-import "../styles/contacts.css";
 import { useState } from "react";
+import "../styles/contacts.css";
+
 function Contacts() {
   const [form, setForm] = useState({
     name: "",
@@ -16,58 +12,22 @@ function Contacts() {
     message: "",
     required: "",
   });
-  // this.handleChange = this.handleChange.bind(this);
-
   const handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
-  // handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   const { name, number, email, message, required } = this.state;
-
-  //   axios
-  //     .post("http://localhost:3001/api/form", {
-  //       name,
-  //       email,
-  //       number,
-  //       message,
-  //       required,
-  //     })
-  //     .then(() => {
-  //       this.setState({
-  //         name: "",
-  //         email: "",
-  //         number: "",
-  //         message: "",
-  //         required: "",
-  //       });
-  //     });
-  //   if (!required === true) {
-  //     toast.success("Successfull");
-  //     this.setState({
-  //       name: "",
-  //       email: "",
-  //       number: "",
-  //       message: "",
-  //       required: "",
-  //     });
-  //   }
-  // };
-
   return (
     <div className="contacts">
-      {/* <img className="root" src="logo/Logo_Revision.png" alt="" /> */}
       <Container>
         <Grid container spacing={4}>
           <Grid className="contactForm" item xs={12} sm={6} md={4}>
             <form id="msform">
               <fieldset>
-                <h2 className="fs-title">Personal Details</h2>
+                <h2 className="fs-title">Send Product Details</h2>
                 <h3 className="fs-subtitle">We will contact you asap</h3>
-                <input type="text" name="fname" placeholder="First Name" />
-                <input type="text" name="lname" placeholder="Last Name" />
+                <input type="text" name="fname" placeholder="Name" />
                 <input type="text" name="phone" placeholder="Phone" />
                 <input type="email" name="email" placeholder="Email" />
+                <input type="text" name="product" placeholder="Product Name" />
                 <textarea name="address" placeholder="Address"></textarea>
                 <input
                   type="submit"
@@ -96,7 +56,7 @@ function Contacts() {
               </p>
               <div>
                 <h3>
-                  <img src="https://img.icons8.com/metro/26/000000/filled-message.png" />
+                  <img src="https://img.icons8.com/metro/26/000000/filled-message.png" />{" "}
                   : contact@turtleled.com
                 </h3>
               </div>

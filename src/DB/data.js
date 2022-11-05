@@ -15,7 +15,7 @@ export const productFruits = [
   "https://images.unsplash.com/photo-1568391047493-d859d5ddb509?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fGZydWl0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
 ];
 
-export let data = [
+export const data = [
   {
     sno: 1,
     Varitey: "Onion",
@@ -32,7 +32,7 @@ export let data = [
     sku: 0.5,
     Units: "kg",
     Description:
-      "tomatoes&nbsp;are small,&nbsp;soft, red fruit that you can eat&nbsp;raw&nbsp;in salads or&nbsp;cooked&nbsp;as a vegetable",
+      "tomatoes are small, soft, red fruit that you can eat raw in salads or cooked as a vegetable",
   },
   {
     sno: 3,
@@ -41,7 +41,7 @@ export let data = [
     sku: 0.5,
     Units: "kg",
     Description:
-      "Potatoes&nbsp;are edible tubers, available worldwide and all year long. They are relatively cheap to grow, rich in nutrients, and they can make a delicious treat",
+      "Potatoes are edible tubers, available worldwide and all year long. They are relatively cheap to grow, rich in nutrients, and they can make a delicious treat",
   },
   {
     sno: 4,
@@ -50,7 +50,7 @@ export let data = [
     sku: 0.5,
     Units: "kg",
     Description:
-      "Sweet potatoes&nbsp;are a staple food in many parts of the world. They are a good source of fiber, potassium, vitamins, and other essential nutrients",
+      "Sweet potatoes are a staple food in many parts of the world. They are a good source of fiber, potassium, vitamins, and other essential nutrients",
   },
   {
     sno: 5,
@@ -59,7 +59,7 @@ export let data = [
     sku: 0.5,
     Units: "kg",
     Description:
-      "The&nbsp;carrot&nbsp; is a root vegetable often claimed to be the perfect health food. It is crunchy, tasty, and highly nutritious.",
+      "The carrot  is a root vegetable often claimed to be the perfect health food. It is crunchy, tasty, and highly nutritious.",
   },
   {
     sno: 6,
@@ -68,7 +68,7 @@ export let data = [
     sku: 0.5,
     Units: "kg",
     Description:
-      "Beetroot&nbsp; is a root vegetable also known as red beet, table beet, garden beet, or just beet. Packed with essential nutrients",
+      "Beetroot  is a root vegetable also known as red beet, table beet, garden beet, or just beet. Packed with essential nutrients",
   },
   {
     sno: 7,
@@ -86,7 +86,7 @@ export let data = [
     sku: 0.5,
     Units: "kg",
     Description:
-      "Lemon cucumbers&nbsp;have no lemon flavor and their skin is slightly thicker and the center is more seedy as the fruit stays on the vine longer",
+      "Lemon cucumbers have no lemon flavor and their skin is slightly thicker and the center is more seedy as the fruit stays on the vine longer",
   },
   {
     sno: 9,
@@ -104,7 +104,7 @@ export let data = [
     sku: 0.5,
     Units: "kg",
     Description:
-      "Bitter gourd&nbsp;is a rich source of vitamin C, which helps fight many diseases, and wound healing and is crucial for development and growth",
+      "Bitter gourd is a rich source of vitamin C, which helps fight many diseases, and wound healing and is crucial for development and growth",
   },
   {
     sno: 11,

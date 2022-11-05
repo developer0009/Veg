@@ -93,3 +93,6 @@ div.contactForm {
   margin-top: 50px;
   align-items: center;
 }
+input.product {
+  font-weight: 900;
+}
