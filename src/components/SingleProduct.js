@@ -9,6 +9,7 @@ export default function SingleProduct() {
   const { name } = useParams();
   const ele = useRef();
   const ele2 = useRef();
+  const [disable, setDisable] = useState(false);
   const arr = useMemo(() => {
     return {
       ...data.find((obj) => obj.Varitey === name.trim()),
@@ -27,8 +28,14 @@ export default function SingleProduct() {
   const handleChange = (evt) => {
     setProd({ ...prod, [evt.target.name]: evt.target.value });
     if (evt.target.name == "kg")
-      ele.current.value = Math.round(ele2.current.value * arr.sku);
+      ele.current.value = ele2.current.value * arr.sku + ` ${arr.Units}`;
   };
+  const handleClick = () => {
+    ele.current.value = 1 * arr.sku + ` ${arr.Units}`;
+    setDisable(!disable);
+    ele2.current.value = 1;
+  };
+
   return (
     <div>
       <div className="container ">
@@ -50,7 +57,11 @@ export default function SingleProduct() {
                     ? "Some quick example text to build on the card title and make up the bulk of the card's content."
                     : arr.Description}{" "}
                 </Card.Text>
-                <Button variant="success">
+                <Button
+                  variant="success"
+                  onClick={handleClick}
+                  disabled={disable}
+                >
                   Add to Cart <i class="fa-solid fa-cart-shopping"></i>
                 </Button>
               </Card.Body>
